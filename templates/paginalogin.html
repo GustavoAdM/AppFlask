@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/paginalogin.css') }}">
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="centralizar">
+        <div class="CONTEINER">
+            <form action="" method="POST">
+                <h2>LOGIN</h2>
+                <div class="box-info">
+                    <input type="email" name="email">
+                </div>
+                <div class="box-info">
+                    <input type="password" name="senha" id="">
+                </div>
+                <input type="submit" value="ENTRAR" id="btn-login">
+            </form>
+        </div>
+    </div>
+    <div class="mensagem {{ erro }}">
+        <p>Erro ao logar na conta<br>test@test.com test123</p>
+    </div>
+    <script type="text/javascript" src="/static/js/paginalogin.js"></script>
+</body>
+</html>

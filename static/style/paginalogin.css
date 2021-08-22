@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('/static/img/black-futuristic-wallpaper-gaming-vector.jpg');
+}
+.centralizar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.CONTEINER {
+    width: 450px;
+    height: 450px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #B0C4DE;
+}
+.CONTEINER h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.box-info {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.box-info input {
+    border-radius: 8px;
+    border: 1px solid #87CEFA;
+    padding: 15px;
+    font-size: 18px;
+}
+#btn-login {
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.mensagem p {
+    color: white;
+    font-weight: 600;
+}
+.mensagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    width: 200px;
+    height: 60px;
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(190, 29, 29);
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mensagem.active {
+    visibility: visible;
+}
